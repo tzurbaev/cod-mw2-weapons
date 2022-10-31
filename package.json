@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "generate": "node scripts/generate-data.cjs",
+    "build": "npm run generate && vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint --fix \"./src/**/*.{vue,ts,html,js}\""
   },

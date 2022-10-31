@@ -1,0 +1,42 @@
+[
+  {
+    "id": "assault-rifles",
+    "name": "Assault Rifles"
+  },
+  {
+    "id": "battle-rifles",
+    "name": "Battle Rifles"
+  },
+  {
+    "id": "shotguns",
+    "name": "Shotguns"
+  },
+  {
+    "id": "smgs",
+    "name": "SMGs"
+  },
+  {
+    "id": "lmgs",
+    "name": "LMGs"
+  },
+  {
+    "id": "marksman-rifles",
+    "name": "Marksman Rifles"
+  },
+  {
+    "id": "sniper-rifles",
+    "name": "Sniper Rifles"
+  },
+  {
+    "id": "handguns",
+    "name": "Handguns"
+  },
+  {
+    "id": "launchers",
+    "name": "Launchers"
+  },
+  {
+    "id": "melee",
+    "name": "Melee"
+  }
+]

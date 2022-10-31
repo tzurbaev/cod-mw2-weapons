@@ -50,7 +50,7 @@
                     </div>
                   </div>
                   <p v-else-if="parent.length > 0" class="text-sm text-gray-700 mt-3">
-                    {{ weapon.name }} is the last weapon<template v-if="weapon.platform"> in <span class="font-bold">{{ weapon.platform.name }}</span></template>.
+                    {{ weapon.name }} is the last weapon in chain.
                   </p>
                 </div>
               </div>

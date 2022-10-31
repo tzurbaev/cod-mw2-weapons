@@ -1,6 +1,18 @@
 <template>
   <div v-if="weapons.length > 0">
-    <h2 class="text-2xl font-medium text-gray-900 mb-4">{{ weapons.length }} Weapon{{ weapons.length > 1 ? 's' : '' }}</h2>
+    <div class="mb-4 sm:flex sm:items-center sm:justify-between">
+      <div>
+        <h2 class="text-2xl font-medium text-gray-900">{{ weapons.length }} Weapon{{ weapons.length > 1 ? 's' : '' }}</h2>
+        <p class="mt-1 text-sm text-gray-700">Click or tap on weapon card to view unlock path.</p>
+      </div>
+      <div v-if="hasFilters" class="mt-2 sm:mt-0">
+        <a href="javascript:;" class="inline-flex items-center text-sm text-gray-700 hover:underline" @click="$emit('reset')">
+          <XMarkIcon class="w-4 h-4" />
+          <span>Reset Filters</span>
+        </a>
+      </div>
+    </div>
+
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
       <div v-for="weapon in weapons"
            :key="weapon.id"
@@ -12,7 +24,7 @@
           <div class="text-sm text-gray-900 flex items-center gap-2">
             <template v-if="weapon.unlock_type === UnlockType.Auto">
               <CheckCircleIcon class="w-4 h-4" />
-              <span>Start Weapon</span>
+              <span>Starting Weapon</span>
             </template>
             <template v-else-if="weapon.unlock_type === UnlockType.Level">
               <StarIcon class="w-4 h-4" />
@@ -49,13 +61,16 @@
 
 <script setup lang="ts">
 import { UnlockType, ExtendedWeapon } from '@/game/types';
-import { CheckCircleIcon, StarIcon, ArrowTrendingUpIcon } from '@heroicons/vue/24/outline';
+import {
+  CheckCircleIcon, StarIcon, ArrowTrendingUpIcon, XMarkIcon,
+} from '@heroicons/vue/24/outline';
 import { Ref, ref } from 'vue';
 import WeaponModal from '@/game/components/WeaponModal.vue';
 
 defineEmits(['reset']);
 defineProps<{
   weapons: ExtendedWeapon[];
+  hasFilters: boolean;
 }>();
 
 const modalIsOpen: Ref<boolean> = ref(false);

@@ -1,7 +1,7 @@
 <template>
   <span>
     <template v-if="weapon.unlock_type === UnlockType.Auto">
-      Start playing to receive <span class="font-bold">{{ weapon.name }}</span> for free.
+      <span class="font-bold">{{ weapon.name }}</span> is a starting weapon.
     </template>
     <template v-else-if="weapon.unlock_type === UnlockType.Level">
       Reach <span class="font-bold">Rank {{ weapon.unlock_level }}</span> to unlock <span class="font-bold">{{ weapon.name }}</span>.
