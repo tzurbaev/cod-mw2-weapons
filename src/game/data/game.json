@@ -1,0 +1,595 @@
+{
+  "categories": [
+    {
+      "id": "assault-rifles",
+      "name": "Assault Rifles"
+    },
+    {
+      "id": "battle-rifles",
+      "name": "Battle Rifles"
+    },
+    {
+      "id": "shotguns",
+      "name": "Shotguns"
+    },
+    {
+      "id": "smgs",
+      "name": "SMGs"
+    },
+    {
+      "id": "lmgs",
+      "name": "LMGs"
+    },
+    {
+      "id": "marksman-rifles",
+      "name": "Marksman Rifles"
+    },
+    {
+      "id": "sniper-rifles",
+      "name": "Sniper Rifles"
+    },
+    {
+      "id": "handguns",
+      "name": "Handguns"
+    },
+    {
+      "id": "launchers",
+      "name": "Launchers"
+    },
+    {
+      "id": "melee",
+      "name": "Melee"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "m4",
+      "name": "M4 Platform"
+    },
+    {
+      "id": "taq",
+      "name": "Tactique Verte Platform"
+    },
+    {
+      "id": "kastovia",
+      "name": "Kastovia Platform"
+    },
+    {
+      "id": "lachmann",
+      "name": "Lachmann & Meer Platform"
+    },
+    {
+      "id": "bruen-bullpup",
+      "name": "Bruen Bullpup Platform"
+    },
+    {
+      "id": "ordnance",
+      "name": "Ordnance Weapon Platform"
+    },
+    {
+      "id": "lmp",
+      "name": "LMP Platform"
+    },
+    {
+      "id": "taq-defense",
+      "name": "Tactique Defense Platform"
+    },
+    {
+      "id": "fennec",
+      "name": "Fennec Platform"
+    },
+    {
+      "id": "lockwood",
+      "name": "Lockwood Sport Platform"
+    },
+    {
+      "id": "expedite",
+      "name": "Expedite Platform"
+    },
+    {
+      "id": "bryson-800",
+      "name": "Bryson 800 Series Platform"
+    },
+    {
+      "id": "sakin",
+      "name": "Sakin MG Platform"
+    },
+    {
+      "id": "raal",
+      "name": "Raal MG Platform"
+    },
+    {
+      "id": "bryson-long",
+      "name": "Bryson Long Rifle Platform"
+    },
+    {
+      "id": "mark-2",
+      "name": "Mark 2 Platform"
+    },
+    {
+      "id": "mrba",
+      "name": "MRBA Platform"
+    },
+    {
+      "id": "signal",
+      "name": "Signal Platform"
+    },
+    {
+      "id": "bruen-890",
+      "name": "Bruen 890 Platform"
+    },
+    {
+      "id": "sakin-g",
+      "name": "Sakin G Series Platform"
+    },
+    {
+      "id": "xrk",
+      "name": "XRK Platform"
+    },
+    {
+      "id": "basilisk-500",
+      "name": "Basilisk 500 Platform"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "m4",
+      "category_id": "assault-rifles",
+      "platform_id": "m4",
+      "name": "M4",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "ftac-recon",
+      "category_id": "battle-rifles",
+      "platform_id": "m4",
+      "name": "FTAC Recon",
+      "unlock_type": "weapon",
+      "unlock_id": "m4",
+      "unlock_level": 13
+    },
+    {
+      "id": "fss-hurricane",
+      "category_id": "smgs",
+      "platform_id": "m4",
+      "name": "FSS Hurricane",
+      "unlock_type": "weapon",
+      "unlock_id": "ftac-recon",
+      "unlock_level": 16
+    },
+    {
+      "id": "556-icarus",
+      "category_id": "lmgs",
+      "platform_id": "m4",
+      "name": "556 Icarus",
+      "unlock_type": "weapon",
+      "unlock_id": "m4",
+      "unlock_level": 18
+    },
+    {
+      "id": "m16",
+      "category_id": "assault-rifles",
+      "platform_id": "m4",
+      "name": "M16",
+      "unlock_type": "weapon",
+      "unlock_id": "556-icarus",
+      "unlock_level": 13
+    },
+    {
+      "id": "taq-56",
+      "category_id": "assault-rifles",
+      "platform_id": "taq",
+      "name": "TAQ-56",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 19
+    },
+    {
+      "id": "taq-v",
+      "category_id": "battle-rifles",
+      "platform_id": "taq",
+      "name": "TAQ-V",
+      "unlock_type": "weapon",
+      "unlock_id": "taq-56",
+      "unlock_level": 11
+    },
+    {
+      "id": "taq-m",
+      "category_id": "marksman-rifles",
+      "platform_id": "taq",
+      "name": "TAQ-M",
+      "unlock_type": "weapon",
+      "unlock_id": "taq-56",
+      "unlock_level": 20
+    },
+    {
+      "id": "kastov-762",
+      "category_id": "assault-rifles",
+      "platform_id": "kastovia",
+      "name": "Kastov 762",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 23
+    },
+    {
+      "id": "kastov-545",
+      "category_id": "assault-rifles",
+      "platform_id": "kastovia",
+      "name": "Kastov 545",
+      "unlock_type": "weapon",
+      "unlock_id": "kastov-762",
+      "unlock_level": 11
+    },
+    {
+      "id": "kastov-74u",
+      "category_id": "assault-rifles",
+      "platform_id": "kastovia",
+      "name": "Kastov 74U",
+      "unlock_type": "weapon",
+      "unlock_id": "kastov-545",
+      "unlock_level": 13
+    },
+    {
+      "id": "vaznev-9k",
+      "category_id": "smgs",
+      "platform_id": "kastovia",
+      "name": "Vaznev-9K",
+      "unlock_type": "weapon",
+      "unlock_id": "kastov-74u",
+      "unlock_level": 15
+    },
+    {
+      "id": "minibak",
+      "category_id": "smgs",
+      "platform_id": "kastovia",
+      "name": "Minibak",
+      "unlock_type": "weapon",
+      "unlock_id": "vaznev-9k",
+      "unlock_level": 14
+    },
+    {
+      "id": "rpk",
+      "category_id": "lmgs",
+      "platform_id": "kastovia",
+      "name": "RPK",
+      "unlock_type": "weapon",
+      "unlock_id": "kastov-762",
+      "unlock_level": 16
+    },
+    {
+      "id": "lachmann-762",
+      "category_id": "battle-rifles",
+      "platform_id": "lachmann",
+      "name": "Lachmann-762",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 16
+    },
+    {
+      "id": "lachmann-556",
+      "category_id": "assault-rifles",
+      "platform_id": "lachmann",
+      "name": "Lachmann-556",
+      "unlock_type": "weapon",
+      "unlock_id": "lachmann-762",
+      "unlock_level": 13
+    },
+    {
+      "id": "lachmann-sub",
+      "category_id": "smgs",
+      "platform_id": "lachmann",
+      "name": "Lachmann Sub",
+      "unlock_type": "weapon",
+      "unlock_id": "lachmann-556",
+      "unlock_level": 12
+    },
+    {
+      "id": "rapp-h",
+      "category_id": "lmgs",
+      "platform_id": "lachmann",
+      "name": "Rapp H",
+      "unlock_type": "weapon",
+      "unlock_id": "lachmann-556",
+      "unlock_level": 16
+    },
+    {
+      "id": "lm-s",
+      "category_id": "marksman-rifles",
+      "platform_id": "lachmann",
+      "name": "LM-S",
+      "unlock_type": "weapon",
+      "unlock_id": "lachmann-762",
+      "unlock_level": 17
+    },
+    {
+      "id": "stb-556",
+      "category_id": "assault-rifles",
+      "platform_id": "bruen-bullpup",
+      "name": "STB-556",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 41
+    },
+    {
+      "id": "mx9",
+      "category_id": "smgs",
+      "platform_id": "bruen-bullpup",
+      "name": "MX9",
+      "unlock_type": "weapon",
+      "unlock_id": "stb-556",
+      "unlock_level": 13
+    },
+    {
+      "id": "hcr-56",
+      "category_id": "lmgs",
+      "platform_id": "bruen-bullpup",
+      "name": "HCR 56",
+      "unlock_type": "weapon",
+      "unlock_id": "stb-556",
+      "unlock_level": 20
+    },
+    {
+      "id": "ebr-14",
+      "category_id": "marksman-rifles",
+      "platform_id": "ordnance",
+      "name": "EBR-14",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "so-14",
+      "category_id": "battle-rifles",
+      "platform_id": "ordnance",
+      "name": "SO-14",
+      "unlock_type": "weapon",
+      "unlock_id": "ebr-14",
+      "unlock_level": 12
+    },
+    {
+      "id": "vel-46",
+      "category_id": "smgs",
+      "platform_id": "lmp",
+      "name": "VEL 46",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "pdsw-528",
+      "category_id": "smgs",
+      "platform_id": "taq-defense",
+      "name": "PDSW 528",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 5
+    },
+    {
+      "id": "fennec-45",
+      "category_id": "smgs",
+      "platform_id": "fenec",
+      "name": "Fennec 45",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 38
+    },
+    {
+      "id": "lockwood-300",
+      "category_id": "shotguns",
+      "platform_id": "lockwood",
+      "name": "Lockwood 300",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 36
+    },
+    {
+      "id": "expedite-12",
+      "category_id": "shotguns",
+      "platform_id": "expedite",
+      "name": "Expedite 12",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 9
+    },
+    {
+      "id": "bryson-800",
+      "category_id": "shotguns",
+      "platform_id": "bryson-800",
+      "name": "Bryson 800",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "bryson-890",
+      "category_id": "shotguns",
+      "platform_id": "bryson-800",
+      "name": "Bryson 890",
+      "unlock_type": "weapon",
+      "unlock_id": "bryson-800",
+      "unlock_level": 16
+    },
+    {
+      "id": "sakin-mg38",
+      "category_id": "lmgs",
+      "platform_id": "sakin",
+      "name": "Sakin MG38",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "raal-mg",
+      "category_id": "lmgs",
+      "platform_id": "raal",
+      "name": "Raal MG",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 25
+    },
+    {
+      "id": "sp-r-208",
+      "category_id": "marksman-rifles",
+      "platform_id": "bryson-long",
+      "name": "SP-R 208",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 7
+    },
+    {
+      "id": "sa-b-50",
+      "category_id": "marksman-rifles",
+      "platform_id": "bryson-long",
+      "name": "SA-B 50",
+      "unlock_type": "weapon",
+      "unlock_id": "sp-r-208",
+      "unlock_level": 13
+    },
+    {
+      "id": "la-b-330",
+      "category_id": "sniper-rifles",
+      "platform_id": "bryson-long",
+      "name": "LA-B 330",
+      "unlock_type": "weapon",
+      "unlock_id": "sa-b-50",
+      "unlock_level": 16
+    },
+    {
+      "id": "sp-x-80",
+      "category_id": "sniper-rifles",
+      "platform_id": "bryson-long",
+      "name": "SP-X 80",
+      "unlock_type": "weapon",
+      "unlock_id": "la-b-330",
+      "unlock_level": 17
+    },
+    {
+      "id": "lockwood-mk2",
+      "category_id": "marksman-rifles",
+      "platform_id": "mark-2",
+      "name": "Lockwood MK2",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 28
+    },
+    {
+      "id": "mcpr-300",
+      "category_id": "sniper-rifles",
+      "platform_id": "mrba",
+      "name": "MCPR-300",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "signal-50",
+      "category_id": "sniper-rifles",
+      "platform_id": "signal",
+      "name": "Signal 50",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 44
+    },
+    {
+      "id": "riot-shield",
+      "category_id": "melee",
+      "platform_id": null,
+      "name": "Riot Shield",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 37
+    },
+    {
+      "id": "p890",
+      "category_id": "handguns",
+      "platform_id": "bruen-890",
+      "name": "P890",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "50-gs",
+      "category_id": "handguns",
+      "platform_id": "sakin-g",
+      "name": ".50 GS",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 13
+    },
+    {
+      "id": "x12",
+      "category_id": "handguns",
+      "platform_id": "xrk",
+      "name": "X12",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 31
+    },
+    {
+      "id": "x13-auto",
+      "category_id": "handguns",
+      "platform_id": "xrk",
+      "name": "X13 Auto",
+      "unlock_type": "weapon",
+      "unlock_id": "x12",
+      "unlock_level": 10
+    },
+    {
+      "id": "basilisk",
+      "category_id": "handguns",
+      "platform_id": "basilisk-500",
+      "name": "Basilisk",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 39
+    },
+    {
+      "id": "pila",
+      "category_id": "launchers",
+      "platform_id": null,
+      "name": "PILA",
+      "unlock_type": "auto",
+      "unlock_id": null,
+      "unlock_level": null
+    },
+    {
+      "id": "strela-p",
+      "category_id": "launchers",
+      "platform_id": null,
+      "name": "STRELA-P",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 14
+    },
+    {
+      "id": "jokr",
+      "category_id": "launchers",
+      "platform_id": null,
+      "name": "JOKR",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 24
+    },
+    {
+      "id": "rpg-7",
+      "category_id": "launchers",
+      "platform_id": null,
+      "name": "RPG-7",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 32
+    },
+    {
+      "id": "combat-knife",
+      "category_id": "melee",
+      "platform_id": null,
+      "name": "Combat Knife",
+      "unlock_type": "level",
+      "unlock_id": null,
+      "unlock_level": 17
+    }
+  ]
+}
