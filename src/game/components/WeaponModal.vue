@@ -19,7 +19,7 @@
                   <h2 class="text-4xl font-extrabold text-gray-900">
                     {{ weapon.name }}
                   </h2>
-                  <p class="mt-3 font-medium text-gray-500">
+                  <p v-if="weapon.category" class="mt-3 font-medium text-gray-500">
                     {{ weapon.category.name }}
                     <template v-if="weapon.platform"> | {{ weapon.platform.name }}</template>
                   </p>

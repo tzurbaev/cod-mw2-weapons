@@ -24,7 +24,7 @@
               <span v-else>{{ weapon.unlock_id }} Level {{ weapon.unlock_level }}</span>
             </template>
           </div>
-          <p class="mt-4 text-sm text-gray-500">
+          <p v-if="weapon.category" class="mt-4 text-sm text-gray-500">
             {{ weapon.category.name }}
           </p>
           <p v-if="weapon.platform" class="text-sm text-gray-500">

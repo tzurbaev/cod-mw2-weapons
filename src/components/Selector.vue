@@ -32,19 +32,18 @@ import {
   Listbox, ListboxButton, ListboxLabel, ListboxOption, ListboxOptions,
 } from '@headlessui/vue';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/20/solid';
-import { WeaponCategory } from '@/game/types';
 
 const emit = defineEmits(['update:modelValue']);
 const props = defineProps<{
   label: string;
   defaultValue: string;
-  modelValue: WeaponCategory | null;
+  modelValue: any;
   items: { id: string; name: string; }[];
 }>();
 
 const value = computed({
   get: () => props.modelValue,
-  set: (val: WeaponCategory | null) => emit('update:modelValue', !val || val?.id === 'all-items' ? null : val),
+  set: (val: any) => emit('update:modelValue', !val || val?.id === 'all-items' ? null : val),
 });
 
 const prefix = `Selector-${Math.random().toString().replace('.', '')}`;
