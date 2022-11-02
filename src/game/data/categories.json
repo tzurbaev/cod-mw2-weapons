@@ -13,11 +13,13 @@
   },
   {
     "id": "smgs",
-    "name": "SMGs"
+    "name": "SMGs",
+    "alias": "Submachine guns"
   },
   {
     "id": "lmgs",
-    "name": "LMGs"
+    "name": "LMGs",
+    "alias": "light machine guns"
   },
   {
     "id": "marksman-rifles",

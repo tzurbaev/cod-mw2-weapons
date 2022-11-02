@@ -74,6 +74,14 @@ const options = computed(() => {
 
   const lowerCased = query.value.toLowerCase();
 
-  return props.items.filter((item: any) => item.name.toLowerCase().includes(lowerCased) || item.id.toLowerCase().includes(lowerCased));
+  return props.items.filter((item: any) => {
+    if (item.name.toLowerCase().includes(lowerCased) || item.id.toLowerCase().includes(lowerCased)) {
+      return true;
+    } else if (typeof item.alias === 'undefined' || !item.alias) {
+      return false;
+    }
+
+    return item.alias.toLowerCase().includes(lowerCased);
+  });
 });
 </script>

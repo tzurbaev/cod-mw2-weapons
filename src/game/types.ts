@@ -7,6 +7,7 @@ export enum UnlockType {
 export interface WeaponCategory {
   id: string;
   name: string;
+  alias?: string;
 }
 
 export interface WeaponPlatform {

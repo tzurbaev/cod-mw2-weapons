@@ -14,36 +14,7 @@
     </div>
 
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-      <div v-for="weapon in weapons"
-           :key="weapon.id"
-           class="relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm hover:shadow-lg transition-shadow focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-300"
-      >
-        <a href="javascript:;" class="focus:outline-none" @click="openWeaponModal(weapon)">
-          <span class="absolute inset-0" aria-hidden="true" />
-          <p class="text-sm font-bold text-gray-900">{{ weapon.name }}</p>
-          <div class="text-sm text-gray-900 flex items-center gap-2">
-            <template v-if="weapon.unlock_type === UnlockType.Auto">
-              <CheckCircleIcon class="w-4 h-4" />
-              <span>Starting Weapon</span>
-            </template>
-            <template v-else-if="weapon.unlock_type === UnlockType.Level">
-              <StarIcon class="w-4 h-4" />
-              <span>Rank {{ weapon.unlock_level }}</span>
-            </template>
-            <template v-else-if="weapon.unlock_type === UnlockType.Weapon">
-              <ArrowTrendingUpIcon class="w-4 h-4" />
-              <span v-if="weapon.parent"><span class="font-medium">{{ weapon.parent.name }}</span> Level {{ weapon.unlock_level }}</span>
-              <span v-else>{{ weapon.unlock_id }} Level {{ weapon.unlock_level }}</span>
-            </template>
-          </div>
-          <p v-if="weapon.category" class="mt-4 text-sm text-gray-500">
-            {{ weapon.category.name }}
-          </p>
-          <p v-if="weapon.platform" class="text-sm text-gray-500">
-            {{ weapon.platform.name }}
-          </p>
-        </a>
-      </div>
+      <WeaponGridListItem v-for="weapon in weapons" :key="weapon.id" :weapon="weapon" @open="openWeaponModal" />
     </div>
 
     <WeaponModal :open="modalIsOpen" :weapon="modalWeapon" @close="closeWeaponModal" @switch="openWeaponModal" />
@@ -60,12 +31,11 @@
 </template>
 
 <script setup lang="ts">
-import { UnlockType, ExtendedWeapon } from '@/game/types';
-import {
-  CheckCircleIcon, StarIcon, ArrowTrendingUpIcon, XMarkIcon,
-} from '@heroicons/vue/24/outline';
+import { ExtendedWeapon } from '@/game/types';
+import { XMarkIcon } from '@heroicons/vue/24/outline';
 import { Ref, ref } from 'vue';
 import WeaponModal from '@/game/components/WeaponModal.vue';
+import WeaponGridListItem from './WeaponGridListItem.vue';
 
 defineEmits(['reset']);
 defineProps<{

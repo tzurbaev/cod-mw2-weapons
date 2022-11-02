@@ -9,7 +9,12 @@
         <div>
           <label for="weapon-search" class="block text-sm font-medium">Search</label>
           <div class="mt-1">
-            <input v-model="search" type="search" id="weapon-search" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" />
+            <input v-model="search"
+                   type="search"
+                   id="weapon-search"
+                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                   spellcheck="false"
+            />
             <p class="mt-1 text-xs text-gray-600">
               <template v-if="!search">Filter weapons by typing name.</template>
               <a v-else href="javascript:;" class="inline-flex items-center text-xs hover:underline" @click="search = null">
