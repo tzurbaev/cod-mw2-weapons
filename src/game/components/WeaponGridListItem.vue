@@ -20,7 +20,7 @@
       </template>
     </p>
     <div class="w-full flex items-center rounded-lg mt-4 bg-[#1a1919] justify-center h-28">
-      <img :src="`/images/icons/weapons/${weapon.id}.png`"
+      <img :src="`/images/icons/weapons/${weapon.id}.webp`"
            :alt="weapon.name"
            class="max-h-12 max-w-[70%] grayscale"
       />
