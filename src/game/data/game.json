@@ -57,6 +57,10 @@
       "name": "Kastovia Platform"
     },
     {
+      "id": "bruen-ops",
+      "name": "Bruen Ops Platform"
+    },
+    {
       "id": "lachmann",
       "name": "Lachmann & Meer Platform"
     },
@@ -111,6 +115,10 @@
     {
       "id": "mrba",
       "name": "MRBA Platform"
+    },
+    {
+      "id": "imperatorium",
+      "name": "Imperatorium Platform"
     },
     {
       "id": "signal",
@@ -225,6 +233,16 @@
       "unlock_level": 11
     },
     {
+      "id": "m13b",
+      "category_id": "assault-rifles",
+      "platform_id": "bruen-ops",
+      "name": "M13B",
+      "unlock_type": "dmz",
+      "unlock_id": "The Chemist",
+      "unlock_level": null,
+      "unlock_description": "Unlock by defeating The Chemist in the radiation zone of DMZ and extracting his dropped weapon."
+    },
+    {
       "id": "kastov-74u",
       "category_id": "assault-rifles",
       "platform_id": "kastovia",
@@ -250,6 +268,15 @@
       "unlock_type": "weapon",
       "unlock_id": "kastov-74u",
       "unlock_level": 18
+    },
+    {
+      "id": "bas-p",
+      "category_id": "smgs",
+      "platform_id": "bruen-ops",
+      "name": "BAS-P",
+      "unlock_type": "battle-pass",
+      "unlock_id": null,
+      "unlock_level": 1
     },
     {
       "id": "rpk",
@@ -484,6 +511,15 @@
       "unlock_type": "auto",
       "unlock_id": null,
       "unlock_level": null
+    },
+    {
+      "id": "victus-xmr",
+      "category_id": "sniper-rifles",
+      "platform_id": "imperatorium",
+      "name": "Victus XMR",
+      "unlock_type": "battle-pass",
+      "unlock_id": null,
+      "unlock_level": 1
     },
     {
       "id": "signal-50",

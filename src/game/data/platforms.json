@@ -12,6 +12,10 @@
     "name": "Kastovia Platform"
   },
   {
+    "id": "bruen-ops",
+    "name": "Bruen Ops Platform"
+  },
+  {
     "id": "lachmann",
     "name": "Lachmann & Meer Platform"
   },
@@ -66,6 +70,10 @@
   {
     "id": "mrba",
     "name": "MRBA Platform"
+  },
+  {
+    "id": "imperatorium",
+    "name": "Imperatorium Platform"
   },
   {
     "id": "signal",

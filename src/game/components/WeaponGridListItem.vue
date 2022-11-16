@@ -18,6 +18,14 @@
         <span v-if="weapon.parent"><span class="font-medium">{{ weapon.parent.name }}</span> Level {{ weapon.unlock_level }}</span>
         <span v-else>{{ weapon.unlock_id }} Level {{ weapon.unlock_level }}</span>
       </template>
+      <template v-else-if="weapon.unlock_type === UnlockType.BattlePass">
+        <span class="font-bold text-xs">Battle Pass</span>
+        <span>Season 0{{ weapon.unlock_level }}</span>
+      </template>
+      <template v-else-if="weapon.unlock_type === UnlockType.DMZ">
+        <span class="font-bold text-xs">DMZ</span>
+        <span>{{ weapon.unlock_id }}</span>
+      </template>
     </p>
     <div class="w-full flex items-center rounded-lg mt-4 bg-[#1a1919] justify-center h-28">
       <img :src="`/images/icons/weapons/${weapon.id}.webp`"

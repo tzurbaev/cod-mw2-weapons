@@ -2,6 +2,8 @@ export enum UnlockType {
   Auto = 'auto',
   Weapon = 'weapon',
   Level = 'level',
+  DMZ = 'dmz',
+  BattlePass = 'battle-pass',
 }
 
 export interface WeaponCategory {
@@ -23,6 +25,7 @@ export interface Weapon {
   unlock_type: UnlockType;
   unlock_id: string | null;
   unlock_level: number | null;
+  unlock_description?: string | null;
 }
 
 export interface ExtendedWeapon extends Weapon {
