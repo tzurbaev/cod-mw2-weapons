@@ -4,6 +4,16 @@
     <p class="mt-2 text-sm text-gray-700">
       Use this tool to check unlock path for any weapon in <span class="font-bold">Call of Duty: Modern Warfare II</span>.
     </p>
+    <div class="bg-purple-300 rounded-md shadow-md p-4 my-8 space-y-4">
+      <p class="font-bold text-lg">We launched new website!</p>
+      <p>
+        <a href="https://codarmory.com" target="_blank" rel="noopener noreferrer" class="font-bold underline">codarmory.com</a>
+        is a complete weapons and attachments database for
+        <strong>Call of Duty: Modern Warfare II</strong> & <strong>Call of Duty: Warzone 2.0</strong>
+        and is already updated with <strong>Season 01 Reloaded</strong> content.
+      </p>
+      <p>Current website will stay as an archive but won't get any updates. Thank you for using it!</p>
+    </div>
     <div class="my-8">
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <div>
